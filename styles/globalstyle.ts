@@ -1,4 +1,10 @@
 import { css } from '@emotion/react';
-import './login';
+import './components/login';
+
+import { loginInput } from './components/login';
 
 export const global = css``;
+
+export {
+    loginInput
+};
