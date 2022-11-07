@@ -3,6 +3,13 @@
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "baseUrl" : ".",
+    "paths" : {
+        "@styles/*" : ["styles/*"],
+        "@data/*" : ["public/data/*"],
+        "@components/*" : ["public/components/*"],
+        "@api/*" : ["pages/api/*"],
+      },
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
