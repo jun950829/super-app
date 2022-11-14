@@ -1,10 +1,11 @@
-import { css } from '@emotion/react';
-import './components/login';
+import { Global, css } from '@emotion/react';
+import React from 'react';
 
-import { loginInput } from './components/login';
 
-export const global = css``;
+const style = css``;
 
-export {
-    loginInput
-};
+const GlobalStyle = () => {
+    return <Global styles={style} />;
+  };
+
+export default GlobalStyle;

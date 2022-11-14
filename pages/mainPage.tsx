@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 const MainPage: NextPage = () => {
 
   const router = useRouter();
-  console.log(router);
 
   return (
     <div className="bg-slate-400 py-20 px-10 flex flex-col space-y-5 grid gap-10">

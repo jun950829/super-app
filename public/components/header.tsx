@@ -14,13 +14,13 @@ const Header: NextPage = () => {
             </div>
             <div className='menus'>
                 {HEADER_MENU.map((menu, idx) => (
-                    <div key={idx}>{menu.title}</div>
+                    <div key={idx} onClick={() => router.push(`/${menu.path}`)}>{menu.title}</div>
                 ))}
             </div>
 
             <div className="login">
-                <button>login</button>
-                <button>signup</button>
+                <button onClick={() => router.push("/logins/login")}>login</button>
+                <button onClick={() => router.push("/logins/signup")}>signup</button>
             </div>
             
         </section>
