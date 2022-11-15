@@ -1,16 +1,17 @@
 import '../styles/globals.scss'
 import Header from '@components/header';
-
-import GlobalStyle from '@styles/globalstyle';
+import style from '@styles/globalstyle';
 
 import type { AppProps } from 'next/app'
+import { Global } from '@emotion/react';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <Header />
-    <Component {...pageProps} />
+      <Global styles={style}/>
+      <Header />  
+      <Component {...pageProps} />
     </>
   )
 }
