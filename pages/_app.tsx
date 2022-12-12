@@ -1,19 +1,23 @@
 import '../styles/globals.scss'
-import Header from '@components/header';
-import style from '@styles/globalstyle';
-
 import type { AppProps } from 'next/app'
-import { Global } from '@emotion/react';
+import App from 'next/app'
+import Layout from '@/components/Layout';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Global styles={style}/>
-      <Header />  
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
+}
+
+MyApp.getInitialProps = async (appContext: any) => {
+  const appProps = await App.getInitialProps(appContext);
+
+  return { ...appProps }
 }
 
 export default MyApp

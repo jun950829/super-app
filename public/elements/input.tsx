@@ -16,7 +16,7 @@ const Input = (Props: Props) => {
 
     const [text, setText] = useState('');
 
-    const onChange = (e) => {
+    const onChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
         setText(e.target.value);
         console.log(text);
     }

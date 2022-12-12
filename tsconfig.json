@@ -9,6 +9,7 @@
         "@/*" : ["public/*"],
         "@components/*" : ["public/components/*"],
         "@api/*" : ["pages/api/*"],
+        "@data/*" : ["public/data/*"],
       },
     "skipLibCheck": true,
     "strict": true,

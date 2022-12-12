@@ -1,0 +1,273 @@
+#mainPage {
+
+    width : 100%;
+    background-color: #ffffff;
+    
+    // mainpage
+    .mainPageContent {
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        .mainBanner {
+            width: 100%;
+            height: 100%;
+            background-image: url("/img/main_page/mainbanner.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+
+            .mainArea {
+                height: 100%;
+
+
+                .topNoticeArea {
+                    width: 100%;
+                    height: 44px;
+                    background-color: rgba(255,255,255, 0.2);
+                    padding: 0 30px 0 25px;
+                    margin-bottom: 100px;
+
+                    .topNotce {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .layoutWrap {
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+
+                        .leftZone {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            margin-right: 22px;
+
+                            .noticeImg {
+                                width: 30px;
+                                height: 19px;
+                                margin-right: 5px;
+                                background-image: url("/img/icon/banner_notice_img.png");
+                            }
+
+                            p {
+                                height: 100%;
+                                line-height: 44px;
+                                color: #38FF70;
+                            }
+                        }
+
+                        .midZone {
+                            height: 100%;
+
+                            p {
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        .rightZone {
+                            height: 100%;
+
+                            .date {
+                                p {
+                                    color: #FFFFFF;
+                                    line-height: 44px;
+                                }
+                            }
+                        }   
+
+                    }
+                }
+
+                .mainTextArea {
+                    width: 100%;
+                    margin-bottom: 50px;
+
+                    .mainText {
+                        width: 100%;
+
+                        .top_text {
+                            text-align: left;
+                            margin-bottom: 5px;
+                            font-weight: 700;
+                            font-size: 41px;
+                            color: #E9F4FF;
+                            text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+                        }
+                        .mid_text {
+                            text-align: left;
+                            margin-bottom: 5px;
+                            font-weight: 800;
+                            font-size: 53px;
+                            color: #FFFFFF;
+                            text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+                        }
+                        .bot_text {
+                            text-align: left;
+                            font-weight: 700;
+                            font-size: 22px;
+                            color: #FFFFFF;
+                            text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+                        }
+                    }
+                }
+
+                .mainRinkBtnArea {
+                    width: 100%;
+                    display: flex;
+
+                    .linkBox {
+                        position: relative;
+                        width: 234px;
+                        height: 44px;
+                        background: rgba(255, 255, 255, 0.21);
+                        border-radius: 64px;
+                        padding: 0 12px;
+                        display: flex;
+                        align-items: center;
+                        color: #FFFFFF;
+                        cursor: pointer;
+
+                        
+
+                        .circle {
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 40px;
+                            background-color: #38FF70;
+                            border-radius: 50%; 
+                        }
+
+                        .linkTextBox {
+                            
+
+                            p {
+                                position: absolute;
+                                top: 6px;
+                                font-weight: 700;
+                                text-align: left;
+                            }
+
+                            .arrow {
+                                position: absolute;
+                                bottom: 10px;
+                                width: 100%;
+                                height: 11px;
+                                background-image: url("/img/icon/arrow.png");
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+
+                    .link_01 {
+                        margin-right: 23px;
+
+                        .circle {
+                            background: #9492EA;
+                        }
+
+                        p {
+                            span {
+                                font-weight: 500;
+                                font-size: 13px;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+
+                    .link_02 {
+                        .circle {
+                            background: #99EDC5;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    // mainpage
+    .componentsArea {
+        width: 100%;
+        background-image: url("/img/main_page/main_banner_bottom.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0% 100%;
+
+
+        .componentsWrap_center {
+            padding-bottom: 150px;
+            
+            .first_text {
+                font-weight: 700;
+                font-size: 28px;
+                color: #717171;
+            }
+
+            .second_text {
+                font-weight: 700;
+                font-size: 32px;
+                color: #3D3D3D;
+                margin-bottom: 20px;
+            }
+
+            .componentArea {
+                width: 100%;
+            }
+
+            .first_component {
+                margin-bottom: 80px;
+            }
+
+            .second_component {
+                margin-bottom: 80px;
+            }
+
+
+        }
+    }
+
+    // crimecase
+    .beetrust_banner {
+        width: 100%;
+        height: 380px;
+        margin-bottom: 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 100%;   
+    }
+    .crimeCasePage {
+        background-image: url("/img/beetrust/crimecase_banner.jpg");
+    }
+
+    .crimeCasePage_contents {
+
+
+        .contentsWrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .crimeCaseComponentArea {
+                width: calc(100% / 2 - 10px);
+                height: 530px;
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    // betrust-safety
+    .safetyPage {
+        background-image: url("/img/beetrust/safety_banner.jpg");
+        background-position: center center;
+    }
+
+
+
+}

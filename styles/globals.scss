@@ -2,4 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './scss/header.scss';
+@import './mixins';
+@import './variables';
+@import './font/font.scss';
+
+@import './scss/components/header.scss';
+@import './scss/components/footer.scss';
+
+@import './scss/views/mainpage.scss';
+
+
+.mainTitle {
+    text-align: left;
+
+    font-family: 'Paybooc';
+    font-size: 28px;
+    font-weight: bold;
+    color: #3D3D3D;
+
+}
+
+.subTitle {
+    text-align: left;
+
+    font-size: 17px;
+    color: #626262;
+}
+
+.centerSet {
+    width: 1200px;
+    margin : 0 auto;
+}
