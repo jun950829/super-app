@@ -11,6 +11,18 @@
 
 @import './scss/views/mainpage.scss';
 
+body {
+    width: 100%;
+    min-width: 1240px;
+
+    @media (max-width : 600px) {
+        min-width: 0;
+
+        section {
+            overflow-x: hidden;
+        }
+    }
+}
 
 .mainTitle {
     text-align: left;
@@ -22,14 +34,42 @@
 
 }
 
+.font_change_paybooc {
+    font-family: 'Paybooc';
+}
+
 .subTitle {
     text-align: left;
 
+    font-family: 'Noto Sans KR';
     font-size: 17px;
     color: #626262;
 }
 
 .centerSet {
+    position : relative;
     width: 1200px;
     margin : 0 auto;
+
+    @media (max-width : 600px) {
+        width: 100%;
+        padding : 0 3%;
+    }
+}
+
+.limitCenterSet { 
+    position : relative;
+    width: 900px;
+    margin : 0 auto;
+
+    @media (max-width : 600px) {
+        width: 100%;
+        padding : 0 3%;
+    }
+}
+
+.mobileCenterSet {
+    position : relative;
+    width: 100%;
+    padding : 0 20px;
 }

@@ -2,32 +2,61 @@
 
     width : 100%;
     background-color: #ffffff;
-    
+    overflow-x: hidden;
+
     // mainpage
     .mainPageContent {
         width: 100%;
         height: 600px;
+
+        @media (max-width : 600px) {
+            height: auto;
+            margin-bottom : 0;
+        }
+
         text-align: center;
         margin-bottom: 60px;
+        position: relative;
+        z-index: 3;
 
         .mainBanner {
             width: 100%;
             height: 100%;
-            background-image: url("/img/main_page/mainbanner.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 50% 100%;
+
+            @media (max-width : 600px) {
+                height: 75vw;
+            }
+
+            .mainbannerImg {
+                width: 100%;
+                height: 100%;
+                min-width: 1600px;
+                min-height: 600px;
+            }
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            // background-position: 50% 100%;
 
             .mainArea {
+                width: 100%;
                 height: 100%;
-
+                position: absolute;
+                top: 0;
+                left :  0;
+                z-index: 1;
 
                 .topNoticeArea {
+
                     width: 100%;
-                    height: 44px;
-                    background-color: rgba(255,255,255, 0.2);
+                    // height: 44px;
+                    // background-color: rgba(255,255,255, 0.2);
+                    background-color: transparent;
                     padding: 0 30px 0 25px;
                     margin-bottom: 100px;
+
+                    @media (max-width : 600px) {
+                        margin-bottom: 20vw;
+                    }
 
                     .topNotce {
                         width: 100%;
@@ -50,9 +79,8 @@
 
                             .noticeImg {
                                 width: 30px;
-                                height: 19px;
+                                height: 20px;
                                 margin-right: 5px;
-                                background-image: url("/img/icon/banner_notice_img.png");
                             }
 
                             p {
@@ -88,8 +116,15 @@
                     width: 100%;
                     margin-bottom: 50px;
 
+                    @media (max-width : 600px) {
+                        margin-bottom: 5vw;
+                        padding-left: 5%;
+                    }
+
                     .mainText {
                         width: 100%;
+
+                        font-family: 'paybooc';
 
                         .top_text {
                             text-align: left;
@@ -98,6 +133,12 @@
                             font-size: 41px;
                             color: #E9F4FF;
                             text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+                            
+
+                            @media (max-width : 600px) {
+                                font-size: 5vw;
+                                text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                            }
                         }
                         .mid_text {
                             text-align: left;
@@ -106,6 +147,11 @@
                             font-size: 53px;
                             color: #FFFFFF;
                             text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+
+                            @media (max-width : 600px) {
+                                font-size: 6vw;
+                                text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                            }
                         }
                         .bot_text {
                             text-align: left;
@@ -113,6 +159,11 @@
                             font-size: 22px;
                             color: #FFFFFF;
                             text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+
+                            @media (max-width : 600px) {
+                                font-size: 4vw;
+                                text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                            }
                         }
                     }
                 }
@@ -125,7 +176,8 @@
                         position: relative;
                         width: 234px;
                         height: 44px;
-                        background: rgba(255, 255, 255, 0.21);
+                        // background: rgba(255, 255, 255, 0.21);
+                        background: #FFFFFF;
                         border-radius: 64px;
                         padding: 0 12px;
                         display: flex;
@@ -134,6 +186,14 @@
                         cursor: pointer;
 
                         
+                        @media (max-width : 600px) {
+                            width: 25%;
+                            height: 6vw;
+
+                            margin-left: 4%;
+                            background-color: #ffffff;
+                            color : #000000;
+                        }
 
                         .circle {
                             width: 16px;
@@ -141,6 +201,10 @@
                             margin-right: 40px;
                             background-color: #38FF70;
                             border-radius: 50%; 
+                                                    
+                            @media (max-width : 600px) {
+                                display : none;
+                            }
                         }
 
                         .linkTextBox {
@@ -148,9 +212,23 @@
 
                             p {
                                 position: absolute;
-                                top: 6px;
+                                width: 100%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                text-align: center;
                                 font-weight: 700;
-                                text-align: left;
+                                color: #363954;
+
+                                @media (max-width : 600px) {
+                                    top : 50%;
+                                    width: 100%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    font-size: 3vw;
+                                    text-align: center;
+                                    font-weight: 500;
+                                }
                             }
 
                             .arrow {
@@ -158,14 +236,25 @@
                                 bottom: 10px;
                                 width: 100%;
                                 height: 11px;
-                                background-image: url("/img/icon/arrow.png");
                                 background-repeat: no-repeat;
+
+                                @media (max-width : 600px) {
+                                    display: none;
+                                }
                             }
                         }
                     }
 
+                    .linkBox:hover {
+                        filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.25));
+                    }
+
                     .link_01 {
                         margin-right: 23px;
+
+                        @media (max-width : 600px) {
+                            margin-right: 1%;
+                        }
 
                         .circle {
                             background: #9492EA;
@@ -194,14 +283,50 @@
     // mainpage
     .componentsArea {
         width: 100%;
-        background-image: url("/img/main_page/main_banner_bottom.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0% 100%;
+        position: relative;
+
+        .textArea {
+
+            font-family: 'paybooc';
+            width: 100%;
+            text-align: left;
+            background-color: #66B2C5;
+
+            padding : 5%;
+            
+            h2 {
+                color : #ffffff;
+                font-weight: bold;
+                font-size: 5vw;
+                text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+                @media (max-width : 600px) {
+                    text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                }
+            }
+
+            p {
+                color : #ffffff;
+                font-weight: bold;
+                font-size: 3vw;
+                text-shadow: 2px 2px 0px rgba(11, 15, 54, 0.54);
+                margin-top: 10px;
+                @media (max-width : 600px) {
+                    text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                }
+            }
+        }
 
 
         .componentsWrap_center {
             padding-bottom: 150px;
+            z-index: 3;
+
+            @media (max-width : 600px) {
+                padding-bottom: 0;
+            }
             
             .first_text {
                 font-weight: 700;
@@ -217,17 +342,119 @@
             }
 
             .componentArea {
+                position : relative;
+
                 width: 100%;
+                height: 700px;
+
+                @media (max-width : 600px) {
+                    height: 80vw;
+                }
+            }
+
+            .section02 {
+                height: 620px;
+
+                @media (max-width : 600px) {
+                    height: 80vw;
+                }
+            }
+            .section03 {
+                height: 490px;
+
+                @media (max-width : 600px) {
+                    height: 60vw;
+                }
             }
 
             .first_component {
                 margin-bottom: 80px;
+                
+                @media (max-width : 600px) {
+                    background-color: #66B2C5;
+                    margin-bottom: 0;
+                }
             }
 
             .second_component {
                 margin-bottom: 80px;
+
+                @media (max-width : 600px) {
+                    background-color: #374A61;
+                    margin-bottom: 0;
+                }
+
+                .textArea_Second {
+                    font-family: 'paybooc';
+                    width: 100%;
+                    text-align: left;
+                    background-color: #374A61;
+        
+                    padding : 5%;
+                    
+                    h2 {
+                        color : #ffffff;
+                        font-weight: bold;
+                        font-size: 5vw;
+                        text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+                        @media (max-width : 600px) {
+                            text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                        }
+                    }
+        
+                    p {
+                        color : #ffffff;
+                        font-weight: bold;
+                        font-size: 3vw;
+                        text-shadow: 2px 2px 0px rgba(11, 15, 54, 0.54);
+                        @media (max-width : 600px) {
+                            text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                        }
+                        margin-top: 10px;
+                    }
+                }
             }
 
+
+            .third_component {
+                @media (max-width : 600px) {
+                    background-color: #A1AC46;
+                    margin-bottom: 0;
+                }
+
+                .textAreaThird {
+                    background-color: #A1AC46;
+                    margin-bottom: 0;
+
+                    font-family: 'paybooc';
+                    width: 100%;
+                    text-align: left;
+        
+                    padding : 5%;
+
+                    h2 {
+                        color : #ffffff;
+                        font-weight: bold;
+                        font-size: 5vw;
+                        text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+                        @media (max-width : 600px) {
+                            text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                        }
+                    }
+        
+                    p {
+                        color : #ffffff;
+                        font-weight: bold;
+                        font-size: 3vw;
+                        text-shadow: 2px 2px 0px rgba(11, 15, 54, 0.54);
+                        @media (max-width : 600px) {
+                            text-shadow: 1px 1px 1px rgba(11, 15, 54, 0.54);
+                        }
+                        margin-top: 10px;
+                    }
+                }
+
+            }
 
         }
     }
@@ -239,10 +466,43 @@
         margin-bottom: 40px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center 100%;   
-    }
-    .crimeCasePage {
-        background-image: url("/img/beetrust/crimecase_banner.jpg");
+        background-position: center 100%;
+        padding-top: 130px;
+
+        @media (max-width : 600px) {
+            height: 80vw;
+            background-position: 80% center;
+            padding-top: 15vw;
+            margin-bottom: 3vw;
+        }
+
+        .textArea {
+
+            h2 {
+                font-weight: 700;
+                font-size: 41px;
+                font-family: 'paybooc', sans-serif;
+                color: #E3B96A;
+                text-shadow: 2px 2px 1px rgba(11, 15, 54, 0.54);
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 20px;
+                font-family: 'paybooc', sans-serif;
+                color: #FFFFFF;
+            }
+
+            @media (max-width : 600px) {
+                h2 {
+                    font-size: 7vw;
+                }
+    
+                p {
+                    font-size: 5vw;
+                }
+            }
+        }
     }
 
     .crimeCasePage_contents {
@@ -250,22 +510,58 @@
 
         .contentsWrap {
             width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+
+            h2 {
+                font-weight: 700;
+                font-size: 28px;
+                font-family: 'paybooc', sans-serif;
+                color: #3D3D3D;
+                margin-bottom: 5px;
+            }
+
+            .text {
+                font-weight: 400;
+                font-size: 17px;
+                font-family: 'paybooc', sans-serif;
+                color: #626262;
+                margin-bottom: 43px;
+            }
+
+
+
+            
 
             .crimeCaseComponentArea {
-                width: calc(100% / 2 - 10px);
-                height: 530px;
-                margin-bottom: 80px;
+                margin-bottom: 70px;
+            }
+
+            @media (max-width : 600px) {
+                
+                h2 {
+                    font-size: 5vw;
+                    padding: 4%;
+                    padding-bottom: 0;
+                }
+    
+                .text {
+                    font-weight: 400;
+                    font-size: 5vw;
+                    color: #626262;
+                    padding: 4%;
+                    margin-bottom: 0;
+                }
+    
+                .crimeCaseComponentArea {
+                    margin-bottom: 0;
+                }
             }
         }
     }
 
     // betrust-safety
     .safetyPage {
-        background-image: url("/img/beetrust/safety_banner.jpg");
-        background-position: center center;
+        height: 600px;
+        background-color: cover;
     }
 
 

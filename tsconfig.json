@@ -1,16 +1,24 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": ".",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
-    "baseUrl" : ".",
-    "paths" : {
-        "@styles/*" : ["styles/*"],
-        "@/*" : ["public/*"],
-        "@components/*" : ["public/components/*"],
-        "@api/*" : ["pages/api/*"],
-        "@data/*" : ["public/data/*"],
-      },
+    "paths": {
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@/*": [
+        "public/*"
+      ],
+      "@api/*": [
+        "pages/api/*"
+      ]
+    },
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -24,6 +32,14 @@
     "jsxImportSource": "@emotion/react",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/globalstyle.js", "styles/globalstyle.js"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "styles/globalstyle.js",
+    "styles/globalstyle.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -1,10 +1,8 @@
 import type { NextPage } from "next";
+// import fetch from "node-fetch";
 import { useRouter } from "next/router";
-import CrimeCaseComponent from "@/components/crimeCaseComponent";
 
 const Home: NextPage = (props : any) => {
-
- 
 
   return (
     <section id='mainPage'>
@@ -19,7 +17,7 @@ const Home: NextPage = (props : any) => {
 
 export async function getStaticProps() {
 
-  let data = await fetch('https://zzzzzhahatestserver.beeblock.co.kr/api/tb_content/dashboard2?contentYn=Y&category=SAFE&lang=ko');
+  let data = await fetch(process.env.NEXT_PUBLIC_WEB_URL + 'api/tb_content/dashboard2?contentYn=Y&category=SAFE&lang=ko');
   let result = await data.json();
 
   let safetyData = result['SAFETY'].contents;

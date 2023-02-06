@@ -1,10 +1,17 @@
-const { imageConfigDefault } = require('next/dist/shared/lib/image-config');
 const path = require('path');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath : '',
+  basePath : "",
   distDir : '.next',
+  // experimental: {
+  //   concurrentFeatures: true,
+  //   serverComponents: true,
+  // },
+  env: {
+    BASE_URL: process.env.BASE_URL,
+  },
+  trailingSlash : true,
   productionBrowserSourceMaps : false,
   reactStrictMode: true,
   useFileSystemPublicRoutes: true,
@@ -15,7 +22,23 @@ const nextConfig = {
   },
   compiler : {
     emotion : true,
-  }
+  },
+  images : {
+    unoptimized : true,
+  },
+
+  async rewrites() {
+		return [
+			{
+				source: "/api/:path*",
+				destination: process.env.NEXT_PUBLIC_WEB_URL + "api/:path*",
+			},
+			{
+				source: "/api/contact/:path*",
+				destination: process.env.NEXT_PUBLIC_WEB_URL + "api/contact/:path*",
+			},
+		];
+	},
 }
 
 module.exports = nextConfig

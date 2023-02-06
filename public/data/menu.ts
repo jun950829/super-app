@@ -1,77 +1,77 @@
 export const HEADER_MENU = [
     {
-        "title" : "Beetrust", 
-        "path" : "/beetrust/crimecase",
+        "title" : "BeeTrust", 
+        "path" : "/beetrust/safety",
         "key" : "beetrust",
         "list" : [
-            {
-                "title" : "가상자산 범죄 사례", 
-                "path" : "/beetrust/crimecase",
-                "key" : "crime"
-            },
             {
                 "title" : "비블록 안전장치", 
                 "path" : "/beetrust/safety",
                 "key" : "safety"
             },
             {
-                "title" : "관련 뉴스", 
-                "path" : "/beetrust/news",
-                "key" : "news"
-            },
+                "title" : "가상자산 범죄 사례", 
+                "path" : "/beetrust/crimecase",
+                "key" : "crime"
+            }
         ],
     },
     {
-        "title" : "금융소비자보호", 
-        "path" : "",
+        "title" : "센터소개", 
+        "path" : "/care/manifesto",
         "key" : "care",
         "list" : [
             {
-                "title" : "금융소비자보호 선언문", 
+                "title" : "선언문", 
                 "path" : "/care/manifesto",
                 "key" : "manifesto"
             },
             {
-                "title" : "금융소비자보호 이행지침", 
-                "path" : "/care/guidelines",
-                "key" : "guidelines"
-            },
-        ],
-    },
-    {
-        "title" : "가상자산", 
-        "path" : "",
-        "key" : "asset",
-        "list" : [
-            {
-                "title" : "교육", 
-                "path" : "/asset/edu",
-                "key" : "edu"
-            },
-            {
-                "title" : "가상자산 보고서", 
-                "path" : "/asset/report",
-                "key" : "report"
+                "title" : "추진체계", 
+                "path" : "/care/propulsion",
+                "key" : "propulsion"
             },
             // {
-            //     "title" : "인텔리전스", 
-            //     "path" : "/asset/intelligence",
-            //     "key" : "intelligence"
+            //     "title" : "이행지침", 
+            //     "path" : "/care/guidelines",
+            //     "key" : "guidelines"
             // },
         ],
     },
     {
-        "title" : "비블록상담", 
-        "path" : "",
-        "key" : "beeblockCare",
+        "title" : "가상자산", 
+        "path" : "/asset/weekly",
+        "key" : "asset",
         "list" : [
             {
-                "title" : "상담 소개", 
-                "path" : "/beeblockCare/introduce",
-                "key" : "introduce"
+                "title" : '비블록 주간 리포트',
+                "path" : '/asset/weekly',
+                "key" : 'weekly',
             },
             {
-                "title" : "상담 신청", 
+                "title" : "시장 동향・정보", 
+                "path" : "/asset/va",
+                "key" : "va"
+            },
+            {
+                "title" : " 보고서", 
+                "path" : "/asset/report",
+                "key" : "report"
+            },
+            {
+                "title" : ' 관련뉴스',
+                "path" : '/asset/vanews',
+                "key" : 'news'
+            },
+        ],
+    },
+    {
+        "title" : "비블록 신문고", 
+        "path" : "/beeblockCare/request",
+        "key" : "beeblockCare",
+        "list" : [            
+            {
+                "title" : "서비스 신청", 
                 "path" : "/beeblockCare/request",
                 "key" : "request"
             },
@@ -79,7 +79,7 @@ export const HEADER_MENU = [
     },
     {
         "title" : "센터소식", 
-        "path" : "",
+        "path" : "/news/greetings",
         "key" : "news",
         "list" : [
             {
@@ -104,40 +104,40 @@ export const HEADER_MENU = [
 
 export const FOOTER_MENU = [
     {
-        "title" : "Beetrust", 
+        "title" : "BeeTrust", 
         "key" : "beetrust",
         "list" : [
-            {
-                "title" : "가상자산 범죄 사례", 
-                "path" : "/beetrust/crimecase",
-                "key" : "crime"
-            },
             {
                 "title" : "비블록 안전장치", 
                 "path" : "/beetrust/safety",
                 "key" : "safety"
             },
             {
-                "title" : "관련 뉴스", 
-                "path" : "/beetrust/news",
-                "key" : "news"
+                "title" : "가상자산 범죄 사례", 
+                "path" : "/beetrust/crimecase",
+                "key" : "crime"
             },
         ],
     },
     {
-        "title" : "금융소비자보호", 
+        "title" : "센터소개", 
         "key" : "care",
         "list" : [
             {
-                "title" : "금융소비자보호 선언문", 
-                "path" : "",
+                "title" : "선언문", 
+                "path" : "/care/manifesto",
                 "key" : "manifesto"
             },
             {
-                "title" : "금융소비자보호 이행지침", 
-                "path" : "",
-                "key" : "guidelines"
+                "title" : "추진체계", 
+                "path" : "/care/propulsion",
+                "key" : "propulsion"
             },
+            // {
+            //     "title" : "이행지침", 
+            //     "path" : "/care/guidelines",
+            //     "key" : "guidelines"
+            // },
         ],
     },
     {
@@ -145,34 +145,34 @@ export const FOOTER_MENU = [
         "key" : "asset",
         "list" : [
             {
-                "title" : "교육", 
-                "path" : "",
-                "key" : "edu"
+                "title" : '비블록 주간 리포트',
+                "key" : 'weekly',
+                "path" : 'asset/weekly'
             },
             {
-                "title" : "가상자산 보고서", 
-                "path" : "",
+                "title" : "시장 동향・정보", 
+                "path" : "/asset/va",
+                "key" : "va"
+            },
+            {
+                "title" : " 보고서", 
+                "path" : "/asset/report",
                 "key" : "report"
             },
-            // {
-            //     "title" : "인텔리전스", 
-            //     "path" : "",
-            //     "key" : "intelligence"
-            // },
+            {
+                "title" : '관련뉴스',
+                "path" : '/asset/vanews',
+                "key" : 'news'
+            },
         ],
     },
     {
-        "title" : "비블록상담", 
+        "title" : "비블록 신문고", 
         "key" : "beeblockCare",
         "list" : [
             {
-                "title" : "상담 소개", 
-                "path" : "",
-                "key" : "introduce"
-            },
-            {
-                "title" : "상담 신청", 
-                "path" : "",
+                "title" : "서비스 신청", 
+                "path" : "/beeblockCare/request",
                 "key" : "request"
             },
         ],
@@ -183,38 +183,38 @@ export const FOOTER_MENU = [
         "list" : [
             {
                 "title" : "인사말", 
-                "path" : "",
+                "path" : "/news/greetings",
                 "key" : "greetings"
             },
             {
                 "title" : "공지사항", 
-                "path" : "",
+                "path" : "/news/notice",
                 "key" : "notice"
             },
             {
                 "title" : "Contact Us", 
-                "path" : "",
+                "path" : "/news/contactus",
                 "key" : "contact"
             },
         ],
     }
 ];
 
-export const SNS_MENU = [
-    {
-        "imgPath" : "/img/icon/Blog.png",
-        "key" : "blog"
-    },
-    { 
-        "imgPath" : "/img/icon/Facebook.png",
-        "key" : "facebook"
-    },
-    {
-        "imgPath" : "/img/icon/Insta.png",
-        "key" : "instagram"
-    },
-    {
-        "imgPath" : "/img/icon/Youtube.png",
-        "key" : "youtube"
-    }
-];
+// export const SNS_MENU = [
+//     {
+//         "imgPath" : "/images/icon/Blog.png",
+//         "key" : "blog"
+//     },
+//     { 
+//         "imgPath" : "/images/icon/Facebook.png",
+//         "key" : "facebook"
+//     },
+//     {
+//         "imgPath" : "/images/icon/Insta.png",
+//         "key" : "instagram"
+//     },
+//     {
+//         "imgPath" : "/images/icon/Youtube.png",
+//         "key" : "youtube"
+//     }
+// ];

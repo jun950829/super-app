@@ -26,9 +26,9 @@ export default async function handler(req : NextApiRequest, res : NextApiRespons
 
     const { method, query: { category },} = req;
 
-    await axios('https://zzzzzhahatestserver.beeblock.co.kr/api/tb_content/dashboard2?category=' + category +'&lang=ko')
+    await axios(process.env.NEXT_PUBLIC_WEB_URL + '/api/tb_content/dashboard2?category=' + category +'&lang=ko')
     .then((response) => {
-        console.log(response);
+        //console.log(response);
 
         return res.json({
             test : 'test'

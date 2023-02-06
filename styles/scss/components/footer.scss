@@ -30,27 +30,36 @@
     .ft_left {
         img {
             width : 200px;
+            margin-bottom: 20px;
         }
 
         p {
             margin-left: 50px;
             color : #707070;
+            cursor: pointer;
+        }
+
+        .info {
+            color: #000;
+            font-weight: 500;
         }
     }
 
     .ft_right {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
 
         ul {
             display: block;
             margin: 0 10px;
             text-align: left;
             color : #000000;
+            margin-right: 20px;
 
             p {
                 margin-bottom: 10px;
+                font-weight: 700;
             }
         }
 
@@ -63,15 +72,23 @@
     .fb_left {
         padding-left: 50px;
 
-        width: 450px;
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
-        span {
-            color : #000000;
+        p {
+            margin-right: 20px;
+            cursor: pointer;
         }
+
+        p:hover {
+            color: #000000;
+            font-weight: 700;
+        }
+
+        // span {
+        //     color : #000000;
+        // }
 
         ul {
             li {

@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "env-cmd -f ./.env.development next dev",
+    "dev_prod": "env-cmd -f ./.env.production next dev",
+    "build": "env-cmd -f ./.env.development next build",
+    "build_prod": "env-cmd -f ./.env.production next build",
+    "start": "env-cmd -f ./.env.development next start",
+    "start:production": "env-cmd -f ./.env.production next start",
+    "export": "npm run build && next export",
+    "export_prod": "npm run build_prod && next export"
   },
   "dependencies": {
     "@emotion/babel-plugin": "^11.10.5",
@@ -14,10 +18,15 @@
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.5",
+    "@types/navermaps": "^3.6.1",
     "axios": "^1.2.1",
+    "env-cmd": "^10.1.0",
     "next": "13.0.0",
+    "next-optimized-images": "^2.6.2",
+    "node-fetch": "^3.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "recoil": "^0.7.6",
     "sass": "^1.56.0"
   },
   "devDependencies": {

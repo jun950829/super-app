@@ -8,8 +8,10 @@ const Greetings: NextPage = () => {
 
     const baseStyle = css`
 
+        width : 100%;
+
         img {
-            margin-top : 50px;
+            margin-top : 30px;
             width: 100%;
             text-align: center;
             line-height: 300px;
@@ -19,17 +21,34 @@ const Greetings: NextPage = () => {
             margin : 20px 0px;
             font-family: 'paybooc';
             font-size: 18px;
+            line-height: 30px;
+        }
+
+        .greetingsCss {
+            text-align: left;
+            margin-bottom: 50px;
+        }
+
+        .secondTitle {
+            color: #000;
+            font-weight: 500;
+            font-size: 25px;
+            font-family: 'Noto Sans KR';
+
+            line-height: 30px;
+            margin-top : 30px;
         }
 
     `;
 
     return (
         <section id='greetings' css={baseStyle}>
-            <div className='centerSet'>
+            <div className='limitCenterSet'>
                 <TopLayer data={NEWS_BTNS} title={NEWS_TITLE} subtitle={NEWS_SUBTITLE} selected={'greetings'} />
 
-                <img src="/img/greetings.jpg" alt="이미지 영역" />
+                <img src="/images/greetings.jpg" alt="이미지 영역" />
 
+                <p className="secondTitle" >비블록 투자자보호센터에 방문하신 여러분 환영합니다.</p>
                 <p>
                     비블록은 가산자산통합 플랫폼이라는 기준 아래 혁신적이고 안전한 거래소 구축을 위해 끊임없는 노력과 자금 투명화 작업을 해왔습니다.
                 </p>
@@ -45,7 +64,7 @@ const Greetings: NextPage = () => {
 
                 <p>
                     이제 ESG(Environmental, Social and Governance) 경영을 기본으로 
-                    "세상의 모든 가장자산을 통합하는 플랫폼"으로 또 한 번의 새로운 시작을 알리고자 합니다.  
+                    "세상의 모든 가상자산을 통합하는 플랫폼"으로 또 한 번의 새로운 시작을 알리고자 합니다.  
                 </p>
 
                 <p>
@@ -75,7 +94,7 @@ const Greetings: NextPage = () => {
                     모든 것이 연결되는 초(超) 가상자산 시대 개막에 맞춰 국가 경제와 국민의 삶에 긍정적인 역할을 담당하는 핵심 일꾼이 되기 위해 끊임없이 자책하며 되돌아보려고 합니다. 많은 관심과 사랑을 부탁드립니다.
                 </p>
 
-                <p css={css`text-align:center;`}>감사합니다.</p>
+                <p className="greetingsCss">감사합니다.</p>
             </div>
         </section>
     )
